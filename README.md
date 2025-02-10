@@ -30,6 +30,7 @@ SmartSelfieApp 是一款 iOS 平台应用，旨在帮助用户自动记录每天
 
 ## 项目目录结构
 
+   ```bash
 SmartSelfieApp/
 ├── SmartSelfieApp.swift                   // 应用入口
 ├── Models/
@@ -59,6 +60,7 @@ SmartSelfieApp/
 └── workflows/
 └── ios_build.yml                 // GitHub Actions 编译配置
 
+   ```
 ## 开发要求与规范
 
 - **上架规范**  
@@ -81,13 +83,16 @@ SmartSelfieApp/
    ```bash
    git clone https://github.com/yourusername/SmartSelfieApp.git
 
+   ```
 	2.	打开项目
 使用 Xcode 打开 SmartSelfieApp.xcodeproj 或 SmartSelfieApp.xcworkspace。
 	3.	安装依赖
 如使用 CocoaPods，请运行：
 
+   ```bash
 pod install
 
+   ```
 
 	4.	运行项目
 在 Xcode 中选择目标设备（模拟器或真机），然后编译并运行。
@@ -96,6 +101,7 @@ GitHub Actions CI 配置
 
 项目包含 GitHub Actions 配置文件，位于 .github/workflows/ios_build.yml，用于自动构建项目：
 
+   ```bash
 name: Build iOS App
 
 on:
@@ -136,6 +142,7 @@ jobs:
                      -configuration Release \
                      clean build
 
+   ```bash
 贡献
 
 欢迎提交 Issue 与 Pull Request 改进项目。如需讨论或改进方案，请遵循代码风格并附上详细注释。
